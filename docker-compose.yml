@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  web:
+    image: nginx
+    volumes:
+      - c:\xampp/htdocs/profect/html:/usr/share/nginx/html
+    ports:
+      - "80:80"
+
+  api:
+    image: denisrubitschka/interviewapi
+    ports:
+      - "8080:8080"
